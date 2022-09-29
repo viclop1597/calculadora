@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!-- Esto es un ejercicio de práctica. Donde se mostrará lo aprendido hasta el momento -->
+
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica Ejercicio1</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <!-- Descripción -->
+    <div class="container">
+
+        <div class="row">
+            <div>
+                <h1> Ejercicio de práctica </h1> <!-- Para cambiar el color solo de "Generation"-->
+                <h2> Implementar funciones de una calculadora. </h2>
+                <h5> <strong >Instrucciones:</strong> Ingresar los números en cada recuadro, posteriormente seleccionar qué opción es la requerida; sumar, restar, multiplicar o dividir. Finalmente, saldrá el resultado en el recuadro  <i>"resultado" </i> </h5>
+                <hr>
+            </div>
+        </div>
+        
+    </div>
+
+    <div class="container">
+
+        <div class="row my-5 justify-content-md-center">
+
+            <div class="col-md-5">
+                <label for="num1" class="form-label" title="Escribe aquí un número">Número 1:</label>
+                <input placeholder="Ingresa un número" id='num1' type="number" title="Escribe aquí un número">
+            </div>
+            <div class="col-md-5">
+                <label for="num2" class="form-label" title="Escribe aquí un número">Número 2:</label>
+                <input placeholder="Ingresa un número" id='num2' type="number" title="Escribe aquí un número">
+            </div>
+
+        </div>
+
+        <div class="row my-5 justify-content-md-center">
+
+            <div class="col-md-5">
+                <label for="result" class="form-label" title="Aquí se muestra tu resultado">Resultado:</label>
+                <input class='col' placeholder="Resultado" id='result' type="number" title="Aquí se muestra tu resultado">
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="container mt-5">
+
+        <div class="row my-20 mx-5">
+
+            <div class="col"> 
+                 <button class="btn btn-primary col-12" id='sum' title="Tip: Suma los dos valores ingresados (num1+num2)">Sumar</button>
+            </div>
+            <div class="col"> 
+                <button class="btn btn-primary col-12" id='resta' title="Tip: Resta los dos valores ingresados (num1-num2)">Restar</button>
+            </div>
+            <div class="col"> 
+                <button class="btn btn-primary col-12" id='multipli' title="Tip: Multiplica los dos valores ingresados (num1*num2)">Multiplicar</button>
+            </div>
+            <div class="col"> 
+                <button class="btn btn-primary col-12" id='dividi' title="Tip: Divide los dos valores ingresados (num1/num2)">Dividir</button>
+            </div>
+        </div>
+
+    </div>
+
+<!-- Scripts de bootstrap & java -->
+<script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./scripts/funciones.js"></script> 
+    
+</body>
+
+</html>
